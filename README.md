@@ -9,3 +9,7 @@ A simple browser-based game created in 3 hours while learning the basics of Java
 -  HTML5  
 -  CSS3  
 -  JavaScript (Vanilla JS, no libraries)
+
+---
+
+(assets/screenshot.png)
