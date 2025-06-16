@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Boostrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Aim game</title>
+</head>
+<body>
+<div style="display: flex; flex-direction: row">
+    <div id="score">
+        Aim game<br>
+        Score 0<br>
+        Time: 20
+    </div>
+    <div id="game" style="display: flex;">
+
+        <div id="mole" onclick="{moleClick()}"></div>
+    </div>
+    <i onclick="settingsClick()" class="bi bi-gear-fill settings" style="color: rgb(89,194,218);  margin-top: 20px; font-size: 40px"></i>
+</div>
+
+<div id="settings-div">
+    <h1 class="custom-text" style="margin-left: 145px;">Settings</h1>
+    <div style="z-index: 3; margin-top: 20px; margin-left: 120px; ">
+        <h2 class="custom-text" style=" margin-left: 65px; margin-bottom: 20px;" > Size </h2>
+        <label for="size"></label><input oninput="sizeChange()" type="range" min="10" max="100" value="30" class="slider" id="size">
+    </div>
+
+    <div style="z-index: 3; margin-top: 20px; margin-left: 120px; ">
+        <h2 class="custom-text" style=" margin-left: 10px; margin-bottom: 20px;" > Time (next try) </h2>
+        <label for="time"></label><input oninput="timeChange()" type="range" min="10" max="100" value="10" class="slider" id="time">
+        <h2 class="custom-text" id="timeValue">20</h2>
+    </div>
+</div>
+</body>
+
+<script src="scripts.js"></script>
+</html>
