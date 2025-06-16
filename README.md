@@ -12,4 +12,4 @@ A simple browser-based game created in 3 hours while learning the basics of Java
 
 ---
 
-(assets/screenshot.png)
+![screenshot](assets/screenshot.png)
