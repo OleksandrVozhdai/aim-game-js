@@ -7,6 +7,7 @@ let sizeSlider = document.getElementById("size");
 let timeSlider = document.getElementById("time");
 let timeDisplay = document.getElementById("timeValue");
 let starterTime = 20;
+let color =  document.getElementById("color");
 
 
 let settingsBtn = document.getElementById("settings-btn");
@@ -35,7 +36,7 @@ function moleClick()
 function changeMolePos()
 {
     let randomTop =Math.random() * 470;
-    let randomLeft =(Math.random() * 1500) ;
+    let randomLeft =(Math.random() * 1400) ;
 
     mole.style.top = randomTop + "px";
     mole.style.left = randomLeft + "px";
@@ -65,5 +66,10 @@ function sizeChange()
 function timeChange()
 {
     starterTime = timeSlider.value;
-     timeDisplay.textContent = timeSlider.value;
+    timeDisplay.textContent = timeSlider.value;
+}
+
+function changeColor()
+{
+     mole.style.backgroundColor = color.value;
 }
