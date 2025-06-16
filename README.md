@@ -13,6 +13,7 @@ A simple browser-based game created in 3 hours while learning the basics of Java
 ---
 
 ## Run Locally
+Clone the repository 
  ```bash
  https://github.com/OleksandrVozhdai/aim-game-js.git
 ```
